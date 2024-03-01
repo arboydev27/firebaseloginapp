@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_field
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebaseloginapp/pages/forgot_pw_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
@@ -116,6 +118,32 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
+
+                SizedBox(height: 10),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context, 
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return ForgotPasswordPage();
+                              },
+                              ),
+                            );
+                        },
+                        child: Text("Fogot Password?", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                          ),
+                      )
+                    ],
+                  ),
+                ),
+
                 SizedBox(height: 10),
             
                 // Sign in button
@@ -132,7 +160,8 @@ class _LoginPageState extends State<LoginPage> {
                       child: Center(
                         child: Text("Sign in",
                         style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                        )),
+                        )
+                        ),
                     ),
                   ),
                 ),
