@@ -83,8 +83,7 @@ final _emailController = TextEditingController();
                 ),
 
                 MaterialButton(
-                  onPressed: passwordReset
-                  ,
+                  onPressed: passwordReset,
                   child: Text("Reset Password"),
                   color: Colors.deepPurple[200],
                 ),

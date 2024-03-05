@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "3830007452",
+    "project_id": "fir-login-app-e42b0",
+    "storage_bucket": "fir-login-app-e42b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3830007452:android:76d288de76d5abde7d8f59",
+        "android_client_info": {
+          "package_name": "org.teKsafari.firebaseloginapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbCDAaGoPZETNSBtOroQXNT6XPGnLz85w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
